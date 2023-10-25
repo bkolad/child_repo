@@ -2,7 +2,7 @@ name: 'Workflow of Child REPO'
 
 on:
   workflow_dispatch:
-  repository_dispatch:
+  #repository_dispatch:
   push:
     branches:
       - main
