@@ -1,6 +1,9 @@
 name: 'Workflow of Child REPO'
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs: 
