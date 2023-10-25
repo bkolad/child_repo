@@ -2,13 +2,19 @@ name: 'Workflow of Child REPO'
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs: 
   trigger_workflow:
     runs-on: ubuntu-latest
     steps:
+     steps:
+      - name: "📥  Fetching Repository Contents"
+        uses: actions/checkout@main
       - name: Echo Workflow name
         shell: bash
         run: |
           echo "I am Workflow of Child REPO"
-          sleep 20s
+          sleep 60s
