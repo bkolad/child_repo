@@ -2,7 +2,6 @@ name: 'Workflow of Child REPO'
 
 on:
   workflow_dispatch:
-  #repository_dispatch:
   push:
     branches:
       - main
@@ -16,5 +15,4 @@ jobs:
       - name: Echo Workflow name
         shell: bash
         run: |
-          echo "I am Workflow of Child REPO"
-          sleep 60s
+          exit 1
