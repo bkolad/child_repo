@@ -12,5 +12,7 @@ jobs:
     steps:
       - name: "📥  Fetching Repository Contents"
         uses: actions/checkout@main
-     
-       
+      - name: Echo Workflow name
+        shell: bash
+        run: |
+          exit 1
